@@ -16,48 +16,48 @@ int main(int argc, char* argv[]) {
 
 		switch (menu)
 		{
-		case 'а':
+		case 'Г ':
 			head = Data_input(head, &count);
 			break;
 
-		case 'б':
+		case 'ГЎ':
 			Table(head, count);
 			break;
 
-		case 'в':
+		case 'Гў':
 			head = Add_itm(head, count);
 			break;
 
-		case 'г':
+		case 'ГЈ':
 			head = Clr_itm(head, count);
 			break;
 
-		case 'д':
+		case 'Г¤':
 			head = Edt_itm(head, count);
 			break;
 
-		case 'е':
+		case 'ГҐ':
 			Search(head, count);
 			break;
 
-		case 'ж':
+		case 'Г¦':
 			head = Bubble(head, count);
 			break;
 
-		case 'з':
+		case 'Г§':
 			File_w(head, count);
 			break;
 
-		case 'и':
+		case 'ГЁ':
 			head = File_r(head, &count);
 			break;
 
 		case '0':
-			printf("Завершение программы.");
+			printf("Г‡Г ГўГҐГ°ГёГҐГ­ГЁГҐ ГЇГ°Г®ГЈГ°Г Г¬Г¬Г».");
 			return 0;
 					
 		default:
-			printf("Неверное значение");
+			printf("ГЌГҐГўГҐГ°Г­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ");
 			while (getchar() != '\n');
 			break;
 		}
