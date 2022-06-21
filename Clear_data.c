@@ -7,13 +7,13 @@ struct dev_sample* Clr_itm(struct dev_sample* head, int count) {
 
 
 	if (head == NULL || count < 1) {
-		printf("Отсутствуют данные!\n");
+		printf("ГЋГІГ±ГіГІГ±ГІГўГіГѕГІ Г¤Г Г­Г­Г»ГҐ!\n");
 	}
 	else {
 		Table(head, count);
-		printf("Удалить запись под номером: ");
+		printf("Г“Г¤Г Г«ГЁГІГј Г§Г ГЇГЁГ±Гј ГЇГ®Г¤ Г­Г®Г¬ГҐГ°Г®Г¬: ");
 		while (scanf("%d", &clr_num) != 1) {
-			printf("Неверно введенное значение, попробуйте еще: ");
+			printf("ГЌГҐГўГҐГ°Г­Г® ГўГўГҐГ¤ГҐГ­Г­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ, ГЇГ®ГЇГ°Г®ГЎГіГ©ГІГҐ ГҐГ№ГҐ: ");
 			while (getchar() != '\n');
 		}
 
@@ -21,7 +21,7 @@ struct dev_sample* Clr_itm(struct dev_sample* head, int count) {
 		{
 			pcurrent = pcurrent->next;
 			head = pcurrent;
-			printf("Запись успешно удалена!\n");
+			printf("Г‡Г ГЇГЁГ±Гј ГіГ±ГЇГҐГёГ­Г® ГіГ¤Г Г«ГҐГ­Г !\n");
 			while (getchar() != '\n');
 			Table(head, count);
 			return head;
@@ -38,7 +38,7 @@ struct dev_sample* Clr_itm(struct dev_sample* head, int count) {
 		free(pcurrent);
 		pcurrent = psave;
 
-		printf("Запись успешно удалена!\n");
+		printf("Г‡Г ГЇГЁГ±Гј ГіГ±ГЇГҐГёГ­Г® ГіГ¤Г Г«ГҐГ­Г !\n");
 		while (getchar() != '\n') continue;
 		Table(head, count);
 	}
