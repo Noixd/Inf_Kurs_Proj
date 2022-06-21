@@ -8,20 +8,20 @@ void Search(struct dev_sample* head, int count) {
 	struct dev_sample* pcurrent = head, * psave = NULL;
 
 	if (head == NULL || count < 1) {
-		printf("Îòñóòñòâóþò äàííûå!\n");
+		printf("ÃŽÃ²Ã±Ã³Ã²Ã±Ã²Ã¢Ã³Ã¾Ã² Ã¤Ã Ã­Ã­Ã»Ã¥!\n");
 	}
 	else {
 		Table(head, count);
-		printf("Íîìåð ïîëÿ ïî êîòîðîìó íåîáõîäèìî ïðîèçâåñòè ïîèñê: ");
+		printf("ÃÃ®Ã¬Ã¥Ã° Ã¯Ã®Ã«Ã¿ Ã¯Ã® ÃªÃ®Ã²Ã®Ã°Ã®Ã¬Ã³ Ã­Ã¥Ã®Ã¡ÃµÃ®Ã¤Ã¨Ã¬Ã® Ã¯Ã°Ã®Ã¨Ã§Ã¢Ã¥Ã±Ã²Ã¨ Ã¯Ã®Ã¨Ã±Ãª: ");
 		while (scanf("%d", &src_num) != 1) {
-			printf("Íåâåðíî ââåäåííîå çíà÷åíèå, ïîïðîáóéòå åùå: ");
+			printf("ÃÃ¥Ã¢Ã¥Ã°Ã­Ã® Ã¢Ã¢Ã¥Ã¤Ã¥Ã­Ã­Ã®Ã¥ Ã§Ã­Ã Ã·Ã¥Ã­Ã¨Ã¥, Ã¯Ã®Ã¯Ã°Ã®Ã¡Ã³Ã©Ã²Ã¥ Ã¥Ã¹Ã¥: ");
 			while (getchar() != '\n');
 		}
 
 		switch (src_num)
 		{
 		case 1:
-			printf("Ââåäèòå çàïðîñ äëÿ ïîèñêà:\n");
+			printf("Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã§Ã Ã¯Ã°Ã®Ã± Ã¤Ã«Ã¿ Ã¯Ã®Ã¨Ã±ÃªÃ :\n");
 			scanf("%s", src_str);
 			while (getchar() != '\n');
 
@@ -35,13 +35,13 @@ void Search(struct dev_sample* head, int count) {
 				i++;
 			}
 				if (succes == 0) {
-					printf("Íè÷åãî íå íàéäåíî.\n");
+					printf("ÃÃ¨Ã·Ã¥Ã£Ã® Ã­Ã¥ Ã­Ã Ã©Ã¤Ã¥Ã­Ã®.\n");
 					while (getchar() != '\n');
 				}
 			break;
 
 		case 2:
-			printf("Ââåäèòå çàïðîñ äëÿ ïîèñêà:\n");
+			printf("Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã§Ã Ã¯Ã°Ã®Ã± Ã¤Ã«Ã¿ Ã¯Ã®Ã¨Ã±ÃªÃ :\n");
 			scanf("%lf", &src_lf);
 			while (getchar() != '\n');
 
@@ -55,13 +55,13 @@ void Search(struct dev_sample* head, int count) {
 				i++;
 			}
 			if (succes == 0) {
-				printf("Íè÷åãî íå íàéäåíî.\n");
+				printf("ÃÃ¨Ã·Ã¥Ã£Ã® Ã­Ã¥ Ã­Ã Ã©Ã¤Ã¥Ã­Ã®.\n");
 				while (getchar() != '\n');
 			}
 			break;
 
 		case 3:
-			printf("Ââåäèòå çàïðîñ äëÿ ïîèñêà:\n");
+			printf("Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã§Ã Ã¯Ã°Ã®Ã± Ã¤Ã«Ã¿ Ã¯Ã®Ã¨Ã±ÃªÃ :\n");
 			scanf("%lf", &src_lf);
 			while (getchar() != '\n');
 
@@ -75,13 +75,13 @@ void Search(struct dev_sample* head, int count) {
 				i++;
 			}
 			if (succes == 0) {
-				printf("Íè÷åãî íå íàéäåíî.\n");
+				printf("ÃÃ¨Ã·Ã¥Ã£Ã® Ã­Ã¥ Ã­Ã Ã©Ã¤Ã¥Ã­Ã®.\n");
 				while (getchar() != '\n');
 			}
 			break;
 
 		case 4:
-			printf("Ââåäèòå çàïðîñ äëÿ ïîèñêà:\n");
+			printf("Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã§Ã Ã¯Ã°Ã®Ã± Ã¤Ã«Ã¿ Ã¯Ã®Ã¨Ã±ÃªÃ :\n");
 			scanf("%lf", &src_lf);
 			while (getchar() != '\n');
 
@@ -95,13 +95,13 @@ void Search(struct dev_sample* head, int count) {
 				i++;
 			}
 			if (succes == 0) {
-				printf("Íè÷åãî íå íàéäåíî.\n");
+				printf("ÃÃ¨Ã·Ã¥Ã£Ã® Ã­Ã¥ Ã­Ã Ã©Ã¤Ã¥Ã­Ã®.\n");
 				while (getchar() != '\n');
 			}
 			break;
 
 		case 5:
-			printf("Ââåäèòå çàïðîñ äëÿ ïîèñêà:\n");
+			printf("Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã§Ã Ã¯Ã°Ã®Ã± Ã¤Ã«Ã¿ Ã¯Ã®Ã¨Ã±ÃªÃ :\n");
 			scanf("%d", &src_int);
 			while (getchar() != '\n');
 
@@ -115,7 +115,7 @@ void Search(struct dev_sample* head, int count) {
 				i++;
 			}
 			if (succes == 0) {
-				printf("Íè÷åãî íå íàéäåíî.\n");
+				printf("ÃÃ¨Ã·Ã¥Ã£Ã® Ã­Ã¥ Ã­Ã Ã©Ã¤Ã¥Ã­Ã®.\n");
 				while (getchar() != '\n');
 			}
 			break;
