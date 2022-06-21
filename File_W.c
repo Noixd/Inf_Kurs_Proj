@@ -6,7 +6,7 @@ void File_w(struct dev_sample* head, int count) {
 	FILE* data_file;
 
 	if (head == NULL || count < 1) {
-		printf("Отсутствуют данные!\n");
+		printf("ГЋГІГ±ГіГІГ±ГІГўГіГѕГІ Г¤Г Г­Г­Г»ГҐ!\n");
 	}
 	else
 	{
@@ -21,7 +21,7 @@ void File_w(struct dev_sample* head, int count) {
 			pcurrent = pcurrent->next;
 		}
 
-		printf("Запись прошла успешно!\n");
+		printf("Г‡Г ГЇГЁГ±Гј ГЇГ°Г®ГёГ«Г  ГіГ±ГЇГҐГёГ­Г®!\n");
 		fclose(data_file);
 		while (getchar() != '\n') continue;
 
