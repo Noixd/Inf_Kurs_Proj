@@ -10,16 +10,16 @@ struct dev_sample* Data_input(struct dev_sample* head, int* count) {
 	{
 		while (1)
 		{
-			printf("Создать новый список (старый будет переписан): Д/Н?\n");
+			printf("Г‘Г®Г§Г¤Г ГІГј Г­Г®ГўГ»Г© Г±ГЇГЁГ±Г®ГЄ (Г±ГІГ Г°Г»Г© ГЎГіГ¤ГҐГІ ГЇГҐГ°ГҐГЇГЁГ±Г Г­): Г„/ГЌ?\n");
 			while ((choos = getchar()) == '\n') {
-				printf("Неверно введенное значение, попробуйте еще: ");
+				printf("ГЌГҐГўГҐГ°Г­Г® ГўГўГҐГ¤ГҐГ­Г­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ, ГЇГ®ГЇГ°Г®ГЎГіГ©ГІГҐ ГҐГ№ГҐ: ");
 				while (getchar() != '\n') continue;
 			}
 			choos = toupper(choos);
 
 			switch (choos)
 			{
-			case 'Д':
+			case 'Г„':
 				count_func = 0;
 				pcurrent = head;
 				while (pcurrent != NULL)
@@ -31,7 +31,7 @@ struct dev_sample* Data_input(struct dev_sample* head, int* count) {
 				head = NULL;
 				break;
 
-			case 'Н':
+			case 'ГЌ':
 				count_func = 0;
 				pcurrent = head;
 				while (pcurrent != NULL)
@@ -43,7 +43,7 @@ struct dev_sample* Data_input(struct dev_sample* head, int* count) {
 				break;
 
 			default:
-				printf("Повторите ввод: ");
+				printf("ГЏГ®ГўГІГ®Г°ГЁГІГҐ ГўГўГ®Г¤: ");
 				continue;
 			}
 			break;
@@ -63,33 +63,33 @@ struct dev_sample* Data_input(struct dev_sample* head, int* count) {
 			psave->next = pcurrent;
 		pcurrent->next = NULL;
 
-		printf("Название устройства:\n");
+		printf("ГЌГ Г§ГўГ Г­ГЁГҐ ГіГ±ГІГ°Г®Г©Г±ГІГўГ :\n");
 		while (scanf("%s", pcurrent->name_device) != 1) {
-			printf("Неверно введенное значение, попробуйте еще: ");
+			printf("ГЌГҐГўГҐГ°Г­Г® ГўГўГҐГ¤ГҐГ­Г­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ, ГЇГ®ГЇГ°Г®ГЎГіГ©ГІГҐ ГҐГ№ГҐ: ");
 			while (getchar() != '\n') continue;
 		}
 
-		printf("Значение смещения на входе:\n");
+		printf("Г‡Г­Г Г·ГҐГ­ГЁГҐ Г±Г¬ГҐГ№ГҐГ­ГЁГї Г­Г  ГўГµГ®Г¤ГҐ:\n");
 		while (scanf("%lf", &pcurrent->input) != 1) {
-			printf("Неверно введенное значение, попробуйте еще: ");
+			printf("ГЌГҐГўГҐГ°Г­Г® ГўГўГҐГ¤ГҐГ­Г­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ, ГЇГ®ГЇГ°Г®ГЎГіГ©ГІГҐ ГҐГ№ГҐ: ");
 			while (getchar() != '\n') continue;
 		}
 
-		printf("Значение скорости нарастания сигнала:\n");
+		printf("Г‡Г­Г Г·ГҐГ­ГЁГҐ Г±ГЄГ®Г°Г®Г±ГІГЁ Г­Г Г°Г Г±ГІГ Г­ГЁГї Г±ГЁГЈГ­Г Г«Г :\n");
 		while (scanf("%lf", &pcurrent->kf_rlx_sin) != 1) {
-			printf("Неверно введенное значение, попробуйте еще: ");
+			printf("ГЌГҐГўГҐГ°Г­Г® ГўГўГҐГ¤ГҐГ­Г­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ, ГЇГ®ГЇГ°Г®ГЎГіГ©ГІГҐ ГҐГ№ГҐ: ");
 			while (getchar() != '\n') continue;
 		}
 
-		printf("Значение выходного тока на канал:\n");
+		printf("Г‡Г­Г Г·ГҐГ­ГЁГҐ ГўГ»ГµГ®Г¤Г­Г®ГЈГ® ГІГ®ГЄГ  Г­Г  ГЄГ Г­Г Г«:\n");
 		while (scanf("%lf", &pcurrent->inp_res) != 1) {
-			printf("Неверно введенное значение, попробуйте еще: ");
+			printf("ГЌГҐГўГҐГ°Г­Г® ГўГўГҐГ¤ГҐГ­Г­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ, ГЇГ®ГЇГ°Г®ГЎГіГ©ГІГҐ ГҐГ№ГҐ: ");
 			while (getchar() != '\n') continue;
 		}
 
-		printf("Количество каналов:\n");
+		printf("ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЄГ Г­Г Г«Г®Гў:\n");
 		while (scanf("%d", &pcurrent->amt_ch) != 1) {
-			printf("Неверно введенное значение, попробуйте еще: ");
+			printf("ГЌГҐГўГҐГ°Г­Г® ГўГўГҐГ¤ГҐГ­Г­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ, ГЇГ®ГЇГ°Г®ГЎГіГ©ГІГҐ ГҐГ№ГҐ: ");
 			while (getchar() != '\n') continue;
 		}
 
@@ -98,9 +98,9 @@ struct dev_sample* Data_input(struct dev_sample* head, int* count) {
 		*count = count_func;
 
 		choos = NULL;
-		printf("Продолжить запись: Д/Н?\n");
+		printf("ГЏГ°Г®Г¤Г®Г«Г¦ГЁГІГј Г§Г ГЇГЁГ±Гј: Г„/ГЌ?\n");
 		while ((choos = getchar()) == '\n') {
-			printf("Неверно введенное значение, попробуйте еще: ");
+			printf("ГЌГҐГўГҐГ°Г­Г® ГўГўГҐГ¤ГҐГ­Г­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ, ГЇГ®ГЇГ°Г®ГЎГіГ©ГІГҐ ГҐГ№ГҐ: ");
 			while (getchar() != '\n') continue;
 		}
 		choos = toupper(choos);
@@ -109,23 +109,23 @@ struct dev_sample* Data_input(struct dev_sample* head, int* count) {
 
 			switch (choos)
 			{
-			case 'Д':
+			case 'Г„':
 				continue;
 
-			case 'Н':
+			case 'ГЌ':
 				break;
 				break;
 
 			default:
 				while ((choos = getchar()) == '\n') {
 					choos = toupper(choos);
-					printf("Неверное значение\n");
+					printf("ГЌГҐГўГҐГ°Г­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ\n");
 					while (getchar() != '\n') continue;
 					break;
 				}
 			}
 
-		printf("Ввод завершён.\n");
+		printf("Г‚ГўГ®Г¤ Г§Г ГўГҐГ°ГёВёГ­.\n");
 		while (getchar() != '\n') continue;
 
 		return head;
