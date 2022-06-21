@@ -6,7 +6,7 @@ struct dev_sample *File_r(struct dev_sample* head, int* count) {
 	FILE* data_file;
 
 		if ((data_file = fopen("DATA.txt", "r")) == NULL) {
-			printf("Невозможно открыть файл");
+			printf("ГЌГҐГўГ®Г§Г¬Г®Г¦Г­Г® Г®ГІГЄГ°Г»ГІГј ГґГ Г©Г«");
 			exit(2);
 		}
 
@@ -33,7 +33,7 @@ struct dev_sample *File_r(struct dev_sample* head, int* count) {
 		}
 
 		if (head != NULL) {
-			printf("Запись прошла успешно!\n");
+			printf("Г‡Г ГЇГЁГ±Гј ГЇГ°Г®ГёГ«Г  ГіГ±ГЇГҐГёГ­Г®!\n");
 			Table(head, *count);
 			fclose(data_file);
 		}
