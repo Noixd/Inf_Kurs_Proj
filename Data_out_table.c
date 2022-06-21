@@ -6,12 +6,12 @@ void Table(struct dev_sample* head, int count) {
 	struct dev_sample* pcurrent = NULL;
 
 	if (head == NULL || count < 1) {
-		printf("Îòñóòñòâóþò äàííûå!\n");
+		printf("ÃŽÃ²Ã±Ã³Ã²Ã±Ã²Ã¢Ã³Ã¾Ã² Ã¤Ã Ã­Ã­Ã»Ã¥!\n");
 	}
 	else {
 		pcurrent = head;
 
-		printf("| ¹ |   1. Íàçâàíèå   | 2. Ñìåùåíèå íà âõîäå | 3. Ñêîðîñòü íàðàñòàíèÿ ñèãíàëà | 4. Âûõîäíîé òîê íà êàíàëå | 5. Êîëè÷åñòâî êàíàëîâ |\n");
+		printf("| Â¹ |   1. ÃÃ Ã§Ã¢Ã Ã­Ã¨Ã¥   | 2. Ã‘Ã¬Ã¥Ã¹Ã¥Ã­Ã¨Ã¥ Ã­Ã  Ã¢ÃµÃ®Ã¤Ã¥ | 3. Ã‘ÃªÃ®Ã°Ã®Ã±Ã²Ã¼ Ã­Ã Ã°Ã Ã±Ã²Ã Ã­Ã¨Ã¿ Ã±Ã¨Ã£Ã­Ã Ã«Ã  | 4. Ã‚Ã»ÃµÃ®Ã¤Ã­Ã®Ã© Ã²Ã®Ãª Ã­Ã  ÃªÃ Ã­Ã Ã«Ã¥ | 5. ÃŠÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® ÃªÃ Ã­Ã Ã«Ã®Ã¢ |\n");
 		while (pcurrent != NULL) {
 			printf("|%2.d | %-15s | %-20.2lf | %-30.2lf | %-25.2lf | %-21d |\n", i, pcurrent -> name_device, pcurrent -> input, pcurrent -> kf_rlx_sin, pcurrent -> inp_res, pcurrent -> amt_ch );
 			i++;
