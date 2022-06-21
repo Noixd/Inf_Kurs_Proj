@@ -6,21 +6,21 @@ struct dev_sample* Bubble(struct dev_sample* head, int count)
     int select_dir, select_field;
 
     if (head == NULL || count < 1) {
-        printf("Îòñóòñòâóþò äàííûå!\n");
+        printf("ÃŽÃ²Ã±Ã³Ã²Ã±Ã²Ã¢Ã³Ã¾Ã² Ã¤Ã Ã­Ã­Ã»Ã¥!\n");
         return 0;
     }
     
         Table(head, count);
         
-        printf("Íîìåð ïîëÿ ïî êîòîðîìó íåîáõîäèìî ïðîèçâåñòè ñîðòèðîâêó: ");
+        printf("ÃÃ®Ã¬Ã¥Ã° Ã¯Ã®Ã«Ã¿ Ã¯Ã® ÃªÃ®Ã²Ã®Ã°Ã®Ã¬Ã³ Ã­Ã¥Ã®Ã¡ÃµÃ®Ã¤Ã¨Ã¬Ã® Ã¯Ã°Ã®Ã¨Ã§Ã¢Ã¥Ã±Ã²Ã¨ Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢ÃªÃ³: ");
         while (scanf("%d", &select_field) != 1) {
-            printf("Íåâåðíî ââåäåííîå çíà÷åíèå, ïîïðîáóéòå åùå: ");
+            printf("ÃÃ¥Ã¢Ã¥Ã°Ã­Ã® Ã¢Ã¢Ã¥Ã¤Ã¥Ã­Ã­Ã®Ã¥ Ã§Ã­Ã Ã·Ã¥Ã­Ã¨Ã¥, Ã¯Ã®Ã¯Ã°Ã®Ã¡Ã³Ã©Ã²Ã¥ Ã¥Ã¹Ã¥: ");
             while (getchar() != '\n') continue;
         } 
         
-        printf("Ñîðòèðîâêà ïî:\n1. Ïî óáûââàíèþ\n2. Ïî âîçðàñòàíèþ\n");
+        printf("Ã‘Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢ÃªÃ  Ã¯Ã®:\n1. ÃÃ® Ã³Ã¡Ã»Ã¢Ã¢Ã Ã­Ã¨Ã¾\n2. ÃÃ® Ã¢Ã®Ã§Ã°Ã Ã±Ã²Ã Ã­Ã¨Ã¾\n");
         while (scanf("%d", &select_dir) != 1 || select_dir < 0) {
-            printf("Íåâåðíî ââåäåííîå çíà÷åíèå, ïîïðîáóéòå åùå: ");
+            printf("ÃÃ¥Ã¢Ã¥Ã°Ã­Ã® Ã¢Ã¢Ã¥Ã¤Ã¥Ã­Ã­Ã®Ã¥ Ã§Ã­Ã Ã·Ã¥Ã­Ã¨Ã¥, Ã¯Ã®Ã¯Ã°Ã®Ã¡Ã³Ã©Ã²Ã¥ Ã¥Ã¹Ã¥: ");
             while (getchar() != '\n') continue;
         }
     
@@ -306,7 +306,7 @@ struct dev_sample* Bubble(struct dev_sample* head, int count)
     }
     pcurrent = head;
     while (getchar() != '\n') continue;
-    printf("Ñîðòèðîâêà çàâåðøåíà\n");
+    printf("Ã‘Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢ÃªÃ  Ã§Ã Ã¢Ã¥Ã°Ã¸Ã¥Ã­Ã \n");
     Table(head, count);
     return head;
     }
