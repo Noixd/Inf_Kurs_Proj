@@ -1,5 +1,7 @@
 #include "Header.h"
 
+\\NEED REWORK
+
 struct dev_sample* Bubble(struct dev_sample* head, int count)
 {
     struct dev_sample* pcurrent = head, * psave = NULL, * pswap = NULL, * pswap2 = NULL;
